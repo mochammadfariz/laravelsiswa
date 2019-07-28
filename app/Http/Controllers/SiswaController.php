@@ -12,8 +12,8 @@ class SiswaController extends Controller
         return view('siswa.index', ['data_siswa' => $data_siswa]);
     }
 
-    public function create()
+    public function create(Request $request)
     {
-        return 'Form di submit';
+        \App\Siswa::create($request->all());
     }
 }
