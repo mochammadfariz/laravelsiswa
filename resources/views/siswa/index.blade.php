@@ -56,15 +56,16 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form action="/siswa/create" method="POST">
+                        {{csrf_field()}}
                         <div class="form-group">
                             <label for="exampleInputEmail1">Nama Depan</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nama Depan">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nama Depan">
                         </div>
 
                         <div class="form-group">
                             <label for="exampleInputEmail1">Nama Belakang</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nama Belakang">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nama Belakang">
                         </div>
 
                         <div class="form-group">
@@ -77,7 +78,7 @@
 
                         <div class="form-group">
                             <label for="exampleInputEmail1">Agama</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Agama">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Agama">
                         </div>
 
                         <div class="form-group">

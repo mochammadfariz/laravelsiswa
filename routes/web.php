@@ -15,4 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/siswa','SiswaController@index');
+Route::get('/siswa', 'SiswaController@index');
+Route::post('/siswa/create', 'SiswaController@create');
