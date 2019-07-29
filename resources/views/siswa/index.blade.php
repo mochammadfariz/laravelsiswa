@@ -12,6 +12,11 @@
 <body>
 
     <div class="container">
+        @if(session('sukses'))
+        <div class="alert alert-success" role="alert">
+            {{session('sukses')}}
+        </div>
+        @endif
         <div class="row">
             <div class="col-6">
                 <h1>Data siswa</h1>
