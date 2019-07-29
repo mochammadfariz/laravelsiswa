@@ -17,4 +17,10 @@ class SiswaController extends Controller
         \App\Siswa::create($request->all());
         return redirect('/siswa')->with('sukses', 'Data berhasil di input');
     }
+
+    public function edit($id)
+    {
+        $siswa = \App\Siswa::find($id);
+        return view('siswa/edit');
+    }
 }

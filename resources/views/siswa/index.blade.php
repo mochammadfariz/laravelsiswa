@@ -35,6 +35,7 @@
                     <th>Jenis Kelamin</th>
                     <th>Agama</th>
                     <th>Alamat</th>
+                    <th>Aksi</th>
                 </tr>
                 @foreach($data_siswa as $siswa)
                 <tr>
@@ -43,6 +44,7 @@
                     <td>{{$siswa->jenis_kelamin}}</td>
                     <td>{{$siswa->agama}}</td>
                     <td>{{$siswa->alamat}}</td>
+                    <td><a href="/siswa/{{$siswa->id}}/edit" class="btn btn-warning btn-sm">Edit<a /></td>
                 </tr>
                 @endforeach
             </table>

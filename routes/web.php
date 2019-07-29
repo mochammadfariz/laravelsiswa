@@ -17,3 +17,4 @@ Route::get('/', function () {
 
 Route::get('/siswa', 'SiswaController@index');
 Route::post('/siswa/create', 'SiswaController@create');
+Route::get('/siswa/{id}/edit', 'SiswaController@edit');
