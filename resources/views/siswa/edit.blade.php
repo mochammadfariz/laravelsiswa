@@ -20,7 +20,7 @@
         @endif
         <div class="row">
             <div class="col-lg-12">
-                <form action="/siswa/create" method="POST">
+                <form action="/siswa/{{$siswa->id}}/update" method="POST">
                     {{csrf_field()}}
                     <div class="form-group">
                         <label for="exampleInputEmail1">Nama Depan</label>
