@@ -30,4 +30,11 @@ class SiswaController extends Controller
         $siswa->update($request->all());
         return redirect('/siswa')->with('sukses', 'Data berhasil di update');
     }
+
+    public function delete($id)
+    {
+        $siswa = \App\Siswa::find($id);
+        $siswa->delete();
+        return redirect('/siswa')->with('sukses', 'Data berhasil di hapus');
+    }
 }
