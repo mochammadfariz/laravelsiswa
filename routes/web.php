@@ -15,6 +15,9 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/login', 'AuthController@login');
+Route::post('/postlogin', 'AuthController@postlogin');
+
 Route::get('/dashboard', 'DashboardController@index');
 Route::get('/siswa', 'SiswaController@index');
 Route::post('/siswa/create', 'SiswaController@create');
