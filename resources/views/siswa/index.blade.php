@@ -18,7 +18,7 @@
                             <table class="table table-hover">
                                 <thead>
                                     <tr>
-                                        <th>Nama Depan</th>
+                                        <th>Nama Depans</th>
                                         <th>Nama Belakang</th>
                                         <th>Jenis Kelamin</th>
                                         <th>Agama</th>
